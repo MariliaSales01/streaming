@@ -16,13 +16,12 @@ const RoutesApp = () => {
         <Fragment>
             <Routes>
                 <Route exact path='/home' element={<Private Item={Home}/>}/>
-                <Route path="/" element={<Signin/>}/>
-                <Route exact path='/signup' element={<Signin/>}/>
+                <Route path="/" element={<LanginPages/>}/>
+                <Route exact path='/signup' element={<Signup/>}/>
                 <Route path='*' element={<Signin/>}/>
             </Routes>
         </Fragment>
     </BrowserRouter>
   )
 }
-
 export default RoutesApp
